@@ -1,7 +1,7 @@
 
 # Sistema De Recursos Humanos
 
-**En que se Basa?**
+## En que se Basa?
 
 Este es un proyecto hecho con NET y Angular, este sistema simula lo que es la administracion de empleados desde el punto de vista de una persona de RRHH, entonces el sistema tiene las siguientes funcionalidades :
 
