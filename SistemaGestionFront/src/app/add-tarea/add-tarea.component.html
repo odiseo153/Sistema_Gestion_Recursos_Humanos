@@ -1,0 +1,56 @@
+<form class="form container-fluid d-flex justify-content-center vh-90">
+
+    <p class="title">Crear Tarea</p>
+    <p class="message">
+      si no vas a hacer esta tarea ni la agregues, no pierdas el tiempo proponiendote algo que no vas a hacer
+    </p>
+  
+    
+
+    <span>Descripcion</span>
+      <label>
+        <input
+          required
+          placeholder=""
+          type="text"
+          class="input"
+          [(ngModel)]="tarea.descripcion"
+          [ngModelOptions]="{ standalone: true }"
+        />
+
+      </label>
+  
+      <label>
+        <span>Estado de la Tarea</span>
+        <select
+          class="form-select"
+          required
+          aria-label="Default select example"
+          [(ngModel)]="tarea.estado"
+          [ngModelOptions]="{ standalone: true }"
+        >
+          <option value="No comenzada">No comenzada</option>
+          <option value="Terminada">Terminado</option>
+          <option value="En progreso">En proceso</option>
+        </select>
+      </label>
+
+  
+    <span>Fecha de Vencimiento</span>
+    <label>
+      <input
+        required
+        placeholder=""
+        type="date"
+        class="input"
+        [(ngModel)]="tarea.fechaVencimiento"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </label>
+
+  
+    <button class="submit" (click)="editando ? editarTarea() : agregarTarea()">
+      {{ editando ? "Editar" : "Agregar" }}
+    </button>
+  </form>
+  

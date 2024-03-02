@@ -1,0 +1,125 @@
+<form class="form container-fluid d-flex justify-content-center vh-90">
+  <a class="btn btn-danger" href="/Empleados">Atras</a>
+  <p class="title">Registrar Empleado</p>
+  <p class="message">
+    Regístrate ahora y obtén acceso completo a nuestra aplicación.
+  </p>
+
+  <div class="flex">
+    <label>
+      <input
+        required
+        placeholder=""
+        type="text"
+        class="input"
+        [(ngModel)]="empleado.nombre"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <span>Nombre</span>
+    </label>
+
+    <label>
+      <input
+        required
+        placeholder=""
+        type="text"
+        class="input"
+        [(ngModel)]="empleado.apellido"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <span>Apellido</span>
+    </label>
+  </div>
+
+  <span>Fecha de Nacimiento</span>
+  <label>
+    <input
+      required
+      placeholder=""
+      type="date"
+      class="input"
+      [(ngModel)]="empleado.fechaNacimiento"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </label>
+
+  <label>
+    <span>Genero</span>
+    <select
+      class="form-select"
+      aria-label="Default select example"
+      [(ngModel)]="empleado.genero"
+      [ngModelOptions]="{ standalone: true }"
+    >
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+      <option value="Otro">Otro</option>
+    </select>
+  </label>
+
+  <label>
+    <input
+      required
+      placeholder=""
+      type="text"
+      class="input"
+      [(ngModel)]="empleado.direccion"
+      [ngModelOptions]="{ standalone: true }"
+    />
+    <span>Dirección</span>
+  </label>
+
+  <label>
+    <input
+      required
+      placeholder=""
+      type="text"
+      class="input"
+      [(ngModel)]="empleado.telefono"
+      [ngModelOptions]="{ standalone: true }"
+    />
+    <span>Teléfono</span>
+  </label>
+
+  <label>
+    <span>Departamento</span>
+    <select
+      class="form-select"
+      aria-label="Default select example"
+      [(ngModel)]="empleado.departamentoId"
+      [ngModelOptions]="{ standalone: true }"
+    >
+      <option *ngFor="let item of departamentos" [value]="item.id">
+        {{ item.nombre }}
+      </option>
+    </select>
+  </label>
+
+  <label>
+    <input
+      required
+      placeholder=""
+      type="email"
+      class="input"
+      [(ngModel)]="empleado.correoElectronico"
+      [ngModelOptions]="{ standalone: true }"
+    />
+    <span>Correo Electrónico</span>
+  </label>
+
+  <span>Fecha de Contratación</span>
+  <label>
+    <input
+      required
+      placeholder=""
+      type="date"
+      class="input"
+      [(ngModel)]="empleado.fechaContratacion"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </label>
+
+  <button class="submit" (click)="editando ? EditarEmpleado() : submitForm()">
+    {{ editando ? "Editar" : "Enviar" }}
+  </button>
+</form>

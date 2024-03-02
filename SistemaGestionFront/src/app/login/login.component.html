@@ -1,0 +1,83 @@
+
+
+<div class="loginBox" *ngIf="!posicion">
+  <img
+  *ngIf="loading"
+    class="user img-fluid rounded-circle img-thumbnail w-80"
+    src="https://th.bing.com/th/id/R.619db371b7b836575025cfadd605a7cd?rik=m1ilBB81gFirqw&riu=http%3a%2f%2ficon-library.com%2fimages%2fhr-icon%2fhr-icon-28.jpg&ehk=fHQYLpMa6IlnvtywEP5Mvu9jnzHrPqTLpuKcLWMp9CM%3d&risl=&pid=ImgRaw&r=0"
+    height="100px"
+    width="100px"
+  />
+  <app-loading class="w-80" *ngIf="!loading"></app-loading>
+  <h3>Inicia sesion</h3>
+  <form action="login.php" method="post">
+    <div class="inputBox">
+      <input
+        id="uname"
+        type="text"
+        [(ngModel)]="user"
+        name="Username"
+        required
+        placeholder="Username"
+      />
+      <input
+        id="pass" 
+        type="password"
+        required
+        [(ngModel)]="clave"
+        (keyup.enter)="IniciarSesion()"
+        name="Password"
+        placeholder="Password"
+      />
+    </div>
+    <input type="submit" name="" (click)="IniciarSesion()" value="Entrar" />
+  </form>
+  <a >No tienes Cuenta<br /></a>
+  <div class="text-center">
+    <a (click)="cambiarPosicion(true)" style="color: #59238f">Registrate</a>
+  </div>
+</div>
+
+
+
+<div class="loginBox" *ngIf="posicion">
+  <img
+    class="user img-fluid rounded-circle img-thumbnail h-100 w-100"
+    src="https://i.ibb.co/yVGxFPR/2.png"
+    height="100px"
+    width="100px"
+  />
+  <h3>Registrate aqui</h3>
+  <form action="login.php" method="post">
+    <div class="inputBox">
+      <input
+        id="uname"
+        type="text"
+        [(ngModel)]="N_user"
+        name="Username"
+        placeholder="Nombre"
+      />
+      <input
+        id="uname"
+        type="password"
+        [(ngModel)]="N_clave"
+        name="Username"
+        placeholder="Clave"
+      />
+      <input
+        id="pass"
+        type="text"
+        [(ngModel)]="N_rol"
+        name="Password"
+        placeholder="Rol"
+      />
+    </div>
+    <input type="submit" name="" (click)="addUser()" value="Registrarse" />
+  </form>
+  <a >Ya tienes Cuenta? <br /></a>
+  <div class="text-center">
+    <a (click)="cambiarPosicion(false)" style="color: #59238f"
+      >Iniciar sesion</a
+    >
+  </div>
+</div>

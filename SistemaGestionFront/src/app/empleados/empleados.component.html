@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="btn-group">
+    <div class="textInputWrapper">
+      <input placeholder="Buscar Empleado por nombre" type="text" class="textInput" [(ngModel)]="nombre" />
+    </div>
+  </div>
+
+<div class='row'>
+
+  <div class="btn-group mt-2">
+    <a href="/addEmpleado" class="button">
+      <span class="button__text">Agregar</span>
+      <span class="button__icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke="currentColor"
+          height="24"
+          fill="none"
+          class="svg"
+        >
+          <line y2="19" y1="5" x2="12" x1="12"></line>
+          <line y2="12" y1="12" x2="19" x1="5"></line>
+        </svg>
+      </span>
+    </a>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4" *ngFor="let item of Filtro(); let i = index">
+    <div class="our-team bg-black">
+      <div class="picture">
+        <img class="img-fluid" src="{{item.genero === 'Masculino' ? chico : chica}}">
+      </div>
+      <div class="team-content">
+        <h3 class="name font-sans text-white">{{item.nombre}}</h3>
+        <h4 class="title text-white">{{item.correoElectronico}}</h4>
+      </div>
+      <ul class="social">
+        <a class='btn btn-primary' [routerLink]="['/DetalleEmpleado', item.empleadoId]" ><i class="fa-solid fa-circle-info"></i></a>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+

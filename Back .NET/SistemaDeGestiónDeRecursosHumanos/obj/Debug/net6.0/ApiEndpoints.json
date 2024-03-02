@@ -1,0 +1,428 @@
+[
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EmpleadoController",
+    "Method": "Cantidad",
+    "RelativePath": "Cantidad_Empleados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.DepartamentoController",
+    "Method": "departamentos",
+    "RelativePath": "Departamento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.DepartamentoController",
+    "Method": "Creardepartamento",
+    "RelativePath": "Departamento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NombreDepartamento",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.DepartamentoController",
+    "Method": "departamentoEmpleados",
+    "RelativePath": "Departamento_Empleado/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.DepartamentoController",
+    "Method": "departamentosById",
+    "RelativePath": "Departamento/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EmpleadoController",
+    "Method": "Obtener_Empleados",
+    "RelativePath": "Empleados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EmpleadoController",
+    "Method": "ActualizarEmpleado",
+    "RelativePath": "Empleados",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleadoNuevo",
+        "Type": "Modelos.DTO.ActualizarEmpleadoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EmpleadoController",
+    "Method": "Crear_Empleados",
+    "RelativePath": "Empleados",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleado_",
+        "Type": "Modelos.DTO.CrearEmpleadoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EmpleadoController",
+    "Method": "NombreEmpleados",
+    "RelativePath": "Empleados_Nombres",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EmpleadoController",
+    "Method": "EliminarEmpleado",
+    "RelativePath": "Empleados/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EmpleadoController",
+    "Method": "Obtener_Empleado_By_Id",
+    "RelativePath": "Empleados/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EvaluacionController",
+    "Method": "Actualizar_Evaluacion",
+    "RelativePath": "Evaluacion",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eval",
+        "Type": "Modelos.DTO.ActualizarEvaluacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EvaluacionController",
+    "Method": "CrearEvaluacion",
+    "RelativePath": "Evaluacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "evaluacion",
+        "Type": "Modelos.DTO.CrearEvaluacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EvaluacionController",
+    "Method": "Obtener_Evaluaciones_De_Empleado",
+    "RelativePath": "Evaluacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EvaluacionController",
+    "Method": "Borrar_La_Evaluacion",
+    "RelativePath": "Evaluacion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.EvaluacionController",
+    "Method": "ObtenerEvaluaciones",
+    "RelativePath": "Evaluaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "clave",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.TareaController",
+    "Method": "Crear_Tarea",
+    "RelativePath": "Tarea",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarea",
+        "Type": "Modelos.DTO.CrearTareaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.TareaController",
+    "Method": "Obtener_Tarea_By_Id",
+    "RelativePath": "Tarea/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.TareaController",
+    "Method": "Actualizar_Tarea",
+    "RelativePath": "Tarea/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "tarea",
+        "Type": "Modelos.DTO.CrearTareaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.TareaController",
+    "Method": "Eliminar_Tarea",
+    "RelativePath": "Tarea/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.TareaController",
+    "Method": "Obtener_Tarea",
+    "RelativePath": "Tareas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.UsuarioController",
+    "Method": "CrearUsuario",
+    "RelativePath": "usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Modelos.DTO.CrearUsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.UsuarioController",
+    "Method": "Update",
+    "RelativePath": "usuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsuarioId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "NombreUsuario",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ClaveAcceso",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Rol",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.UsuarioController",
+    "Method": "Delete",
+    "RelativePath": "usuario",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.UsuarioController",
+    "Method": "GetById",
+    "RelativePath": "usuario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaDeGesti\u00F3nDeRecursosHumanos.Controllers.UsuarioController",
+    "Method": "Usuarios",
+    "RelativePath": "usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
